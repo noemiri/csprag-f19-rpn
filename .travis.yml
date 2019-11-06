@@ -1,8 +1,4 @@
 language: python
 python:
   - "3.5"
-before_install:
-  - python3 --version
-install:
-  -
 script: python3 -m test_rpn
