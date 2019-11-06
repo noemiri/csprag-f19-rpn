@@ -2,10 +2,9 @@ language: python
 python:
   - "3.8"
 before_install:
-  - sudo apt-get update
-  - sudo apt-get install python3
-  - python --version
+  - python3 --version
+  - pip3 install -U pip
 install:
-  - pip install -e .[test]
+  - pip install ".[test]"
 script:
-  -python3 test_rpn.py
+  -test_rpn
