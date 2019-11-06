@@ -1,7 +1,8 @@
 language: python
 python:
   - "3.5"
-install:
-  - pip install .
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install python3
 script:
   -test_rpn
