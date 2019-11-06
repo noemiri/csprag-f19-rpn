@@ -5,5 +5,8 @@ before_install:
   - sudo apt-get update
   - sudo apt-get install python3
   - python --version
+install:
+  - pip install -r requirements.txt
+  - pip install -e .[test]
 script:
-  -python3 -n unittest
+  -python3 test_rpn.py
