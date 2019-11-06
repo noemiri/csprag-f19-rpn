@@ -4,5 +4,6 @@ python:
 before_install:
   - python3 --version
   - pip3 install -U pip
+  - pip3 install unittest
 script:
   -python3 -n test_rpn
