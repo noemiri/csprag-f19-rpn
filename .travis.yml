@@ -5,4 +5,4 @@ before_install:
   - python3 --version
   - pip3 install -U pip
 script:
-  -test_rpn
+  -python3 -n test_rpn
